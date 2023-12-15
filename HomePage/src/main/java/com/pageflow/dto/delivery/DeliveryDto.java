@@ -50,14 +50,14 @@ public class DeliveryDto {
     private Long dno;
     private String deliveryRequest;
   }
-  
+
   @Data
   @NoArgsConstructor
   @AllArgsConstructor
   public static class Delete {
-	  private Long dno;
-	  private Long ono;
-	  private String memberId;
-	  private String orderStatus;
+    private Long dno;
+    private Long ono;
+    private String memberId;
+    private String orderStatus;
   }
 }

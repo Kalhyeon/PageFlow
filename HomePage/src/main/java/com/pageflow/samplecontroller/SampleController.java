@@ -11,7 +11,6 @@ public class SampleController {
   public void admin_page() {
   }
 
-
   // 아이디 찾기 & 비밀번호 찾기 페이지
   @GetMapping("/member_find_id_page")
   public void find_id_page() {
@@ -22,10 +21,9 @@ public class SampleController {
   public void find_id_result_page() {
   }
 
-  
   @GetMapping("/mail_code_check_page")
   public ModelAndView mailCodeCheckPage() {
     return new ModelAndView("mail_code_check_page");
   }
-  
+
 }

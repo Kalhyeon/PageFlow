@@ -73,7 +73,6 @@ public class MemberGradeService {
     // 3개월 동안의 구매액을 조회합니다.
     return gradeDao.PurchaseTotalForLastThreeMonths(memberId, threeMonthsAgo);
   }
-  
 
 //다음 등급까지 얼마를 사용해야 등업이 되는지 알수있는 매서드
   public int calculatePurchaseRequired(int purchaseTotalForLastThreeMonths, int currentGradeCode) {
@@ -149,6 +148,7 @@ public class MemberGradeService {
     Integer updateResult = gradeDao.updateMemberGrade(memberId, gradeCode);
 
     // 등급에 따른 설명 반환
+    @SuppressWarnings("unused")
     String gradeDescription;
     if (gradeCode == 4L) {
       gradeDescription = "플래티넘\n최근 한달 순수구매액 30만원 초과";

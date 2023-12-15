@@ -34,7 +34,7 @@ public class BookAdminService {
 
   @Value("${defaultBookImage}")
   private String defaultBookImage;
-  
+
   @Autowired
   private CartDao cartDao;
 
@@ -137,7 +137,7 @@ public class BookAdminService {
       imageName = UUID.randomUUID() + "_" + dto.getAuthorName() + "_" + dto.getBookTitle() + "." + extension;
       // 폴더에 파일명을 주고 파일 객체를 생성 -> 0바이트 파일 생성
       File file = new File(imageFolder, imageName);
-      // profile의 내용을 file로 이동시키자 
+      // profile의 내용을 file로 이동시키자
       if (existImage != null && !existImage.equals(defaultBookImage)) {
         File existFile = new File(imageFolder, existImage);
         existFile.delete();

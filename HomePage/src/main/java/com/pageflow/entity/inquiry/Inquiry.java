@@ -6,10 +6,10 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Inquiry {
-	private Long inno;
-	private String memberId;
-	private String content;
-	private String inquiryType;
-	private String inquiryTitle;
-	private String inquiryAnswer;
+  private Long inno;
+  private String memberId;
+  private String content;
+  private String inquiryType;
+  private String inquiryTitle;
+  private String inquiryAnswer;
 }

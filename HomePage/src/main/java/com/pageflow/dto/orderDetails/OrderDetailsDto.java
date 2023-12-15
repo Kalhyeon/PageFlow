@@ -19,27 +19,27 @@ public class OrderDetailsDto {
     private Integer totalPrice;
 
   }
-  
+
   @Data
   @AllArgsConstructor
   @NoArgsConstructor
   public static class ManyOrder {
-	  private Long bno;
-	  private Long orderCount;
-	  private String bookTitle;
-	  private String categoryName;
-	  private String bookImage;
-	  private String authorName;
-	  private String publisherName;
-	  private Long categoryCode;
-	  private Long categoryParent;
+    private Long bno;
+    private Long orderCount;
+    private String bookTitle;
+    private String categoryName;
+    private String bookImage;
+    private String authorName;
+    private String publisherName;
+    private Long categoryCode;
+    private Long categoryParent;
   }
-  
+
   @Data
   @AllArgsConstructor
   @NoArgsConstructor
   public static class Status {
-	  private String orderStatus;
+    private String orderStatus;
   }
-  
+
 }
